@@ -200,8 +200,8 @@
       margin-right: 80px;
     }
     .btn2-right-nav{
-      margin-right: 80px;
-      gap: 10px;
+      margin-right: 0px;
+      gap: 0px;
     }
     .left-nav{
       margin-right: 90px;
@@ -249,6 +249,13 @@
     .products-newProducts-container{
       display: grid;
       grid-template-columns: repeat(2 , 1fr);
+      padding-bottom: 10px;
+    }
+    .new-products{
+      height: auto;
+    }
+    .off-products{
+      height: auto;
     }
     .image-newProducts{
       width: 169px;
@@ -279,6 +286,9 @@
       margin: 0px;
       padding: 0px;
       margin-top: 20px;
+    }
+    .btn-blog{
+      margin-top: 50px;
     }
     /* article */
 
