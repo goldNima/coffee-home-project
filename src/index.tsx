@@ -4,12 +4,24 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import NavBar from './pages/NavBar';
+import Footer from './pages/footer';
+import { BrowserRouter } from 'react-router-dom';
+
+import ScrollToTop from './components/scrollToTop';
+import './responsive.css';
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter basename='/'>
+    <ScrollToTop />
+      <NavBar />
+      <App />
+      <Footer />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
