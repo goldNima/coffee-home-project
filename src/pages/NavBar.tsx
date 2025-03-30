@@ -48,7 +48,7 @@ function NavBar (){
                 </div>
                 <div onClick={handleCart} className="button-cart-nav-container">
                     <img src={logoCart} alt="logo" className="logo-cart-nav" />
-                    <h3 className="text-cart-nav">0 تومن</h3>
+                    <h3 className="text-cart-nav">سبد خرید</h3>
                 </div>
             </div>
         </div>
