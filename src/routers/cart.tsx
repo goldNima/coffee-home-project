@@ -9,6 +9,7 @@ import logoDelete from '../logos/logo-delete.png'
 function Cart (){
 
     const cartItems = useSelector((state: RootState)=> state.cart.items);
+    const totalPrice = useSelector ((state : RootState)=> state.cart.totalPrice);
     const dispatch = useDispatch();
 
     const handleRemoveFromCart = (id:number)=>{
@@ -31,7 +32,7 @@ function Cart (){
             <div className="left-cart">
                 <h2 className="title-left-cart">قیمت کل و ثبت سفارش</h2>
                 <div className="box-left-cart">
-                    <h3 className="all-price-cart">قیمت کل : <span className="span-cart"></span></h3>
+                    <h3 className="all-price-cart">قیمت کل : <span className="span-cart">{totalPrice}</span></h3>
                 </div>
                 <button className="btn-cart-products">ثبت سفارش</button>
             </div>
