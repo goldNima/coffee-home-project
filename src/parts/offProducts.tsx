@@ -58,7 +58,7 @@ function OffProducts (){
                     <div data-aos="zoom-in" className="box-products-newProducts" key={item.id}>
                         <img src={item.img} alt="" className="image-newProducts" />
                         <h3 className="name-newProducts">{item.name}</h3>
-                        <p className="price-offProducts"><span className='span-priceOffProducts'>تومان {item.offPrice}</span>تومان {item.price}</p>
+                        <p id='price-off-products-id' className="price-offProducts"><span id='price-off-products-id' className='span-priceOffProducts'>تومان {item.offPrice}</span>تومان {item.price}</p>
                         <button onClick={()=> handleAddToCart(item)} className="btn-newProducts">افزودن به سبد خرید</button>
                     </div>
                 ))}
