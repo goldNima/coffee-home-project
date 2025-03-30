@@ -481,6 +481,9 @@
     .title-needHelp{
       font-size: large;
     }
+    #price-off-products-id{
+      font-size: small;
+    }
 
   }
   @media screen and (max-width: 380px) {
